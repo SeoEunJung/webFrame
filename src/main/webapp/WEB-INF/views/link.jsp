@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/main.css">
+	href="${pageContext.request.contextPath}/resources/css/main.css?ver=1">
 </head>
 <body>
 

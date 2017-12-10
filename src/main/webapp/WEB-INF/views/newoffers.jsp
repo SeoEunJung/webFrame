@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/main.css">
+	href="${pageContext.request.contextPath}/resources/css/main.css?ver=1">
 </head>
 <body>
 	희망하는 수강신청 내역입니다.
@@ -22,9 +22,9 @@
 	<table class="formtable">
 		<c:forEach var="newoffer" items="${newoffers}">
 			<tr>
-				<td width=100>${newoffer.year}</td>
-				<td width=100>${newoffer.semester}</td>
-				<td width=100>${newoffer.classname}</td>
+				<td>${newoffer.year}</td>
+				<td>${newoffer.semester}</td>
+				<td>${newoffer.classname}</td>
 			</tr>
 		</c:forEach>
 	</table>

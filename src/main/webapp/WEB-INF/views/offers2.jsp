@@ -7,32 +7,32 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/main.css">
+	href="${pageContext.request.contextPath}/resources/css/main.css?ver=1">
 
 </head>
 <body>
 
 	<table class="formtable">
 		<tr>
-			<td width=100>교필</td>
-			<td width=100>핵A</td>
-			<td width=100>핵B</td>
-			<td width=100>전지</td>
-			<td width=100>전기</td>
-			<td width=100>전선</td>
-			<td width=100>총학점</td>
+			<td >교필</td>
+			<td >핵A</td>
+			<td >핵B</td>
+			<td>전지</td>
+			<td>전기</td>
+			<td >전선</td>
+			<td>총학점</td>
 		</tr>
 	</table>
 	<table class="formtable">
 		<c:forEach var="offer2" items="${offers2}">
 			<tr>
-				<td width=100>${offer2.necessary}</td>
-				<td width=100>${offer2.mainpointA}</td>
-				<td width=100>${offer2.mainpointB}</td>
-				<td width=100>${offer2.major_appointed}</td>
-				<td width=100>${offer2.major_foundation}</td>
-				<td width=100>${offer2.major_select}</td>
-				<td width=100>${offer2.total_grade}</td>
+				<td>${offer2.necessary}</td>
+				<td>${offer2.mainpointA}</td>
+				<td>${offer2.mainpointB}</td>
+				<td>${offer2.major_appointed}</td>
+				<td>${offer2.major_foundation}</td>
+				<td>${offer2.major_select}</td>
+				<td>${offer2.total_grade}</td>
 			</tr>
 		</c:forEach>
 	</table>

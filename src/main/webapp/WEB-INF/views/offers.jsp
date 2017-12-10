@@ -7,13 +7,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/resources/css/main.css">
+	href="${pageContext.request.contextPath}/resources/css/main.css?ver=1">
 </head>
 <body>
 	<table class="formtable">
 		<tr>
-			<td width=100>년도</td>
-			<td width=100>학기</td>
+			<td>년도</td>
+			<td>학기</td>
 			<td>이수학점</td>
 			<td>상세보기</td>
 		</tr>
@@ -21,10 +21,10 @@
 	<table class="formtable">
 		<c:forEach var="offer" items="${offers}">
 			<tr>
-				<td width=100>${offer.year}</td>
-				<td width=100>${offer.semester}</td>
-				<td width=100>${offer.grade}</td>
-				<td width=100><a href="${pageContext.request.contextPath}/link">링크</a></td>
+				<td>${offer.year}</td>
+				<td>${offer.semester}</td>
+				<td>${offer.grade}</td>
+				<td><a href="${pageContext.request.contextPath}/link">링크</a></td>
 			</tr>
 		</c:forEach>
 	</table>
